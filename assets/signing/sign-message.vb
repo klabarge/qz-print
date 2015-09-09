@@ -43,7 +43,7 @@
     Dim hash()      As Byte = shaM.ComputeHash(data)
     Dim result()    As Byte = csp.SignHash(hash, CryptoConfig.MapNameToOID("SHA1"))
 	
-  	Response.ContentType = "text/plain"
-	  response.write(System.Convert.ToBase64String(result,0, result.Length))
+    Response.ContentType = "text/plain"
+    response.write(System.Convert.ToBase64String(result,0, result.Length))
   End Sub
 </script>
