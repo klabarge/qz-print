@@ -36,7 +36,7 @@
 
     Dim cert        As X509Certificate2 = New X509Certificate2(KEY, PASS, X509KeyStorageFlags.MachineKeySet)
     Dim csp         As RSACryptoServiceProvider = CType(cert.PrivateKey,RSACryptoServiceProvider)
-	  Dim shaM        As New SHA1Managed()
+    Dim shaM        As New SHA1Managed()
 
     Dim encodedData As New System.Text.AsciiEncoding
     Dim data()      As Byte = encodedData.GetBytes(strMessage)
